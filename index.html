@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Проголосуй за команду!</title>
+</head>
+<body>
+    <div>
+        <h1 class="titletop">Поддержи команду!</h1>
+        <div class="top">
+            <button>Как голосовать</button><button>Итоги голосования</button>
+        </div>
+        <div class="topContent">
+            euro2020
+        </div>
+        <div class="mapEur">
+            <div id="wr1">
+                <div class="wrapper">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        <form name="myForm" id="contruForm1 " action="URL" method="POST" target="area">
+            <div>
+                <h3 id="titleForm" form="myForm">
+                    Проголосовать за эту страну!
+                </h3>
+                <p id="paragrafForm" form="myForm">
+                    Введите число от 1 до 10:
+        
+                </p>
+                <p><input type="number" size="100" name="num" min="1" max="100" value="1"></p>
+        
+                <h4 id="paragrafForm2" form="myForm">Нажми кнопку проголосовать откроется страница оплаты голосов ></h4> <input
+                    name="paying" type="submit" value="Проголосовать" autofocus form="myForm"></h4>
+        </form>
+        
+        
+        </div>
+        
+        <div class="futer" id="u112-6">
+            <!-- content -->
+            <img class="block" id="u528_img" src="img/1575761429_1-3.jpg" alt="" />
+            <h2>Твой голос по стоимости гамбургера!</h2>
+            <h2>Поддержи свою команду!!!</h2>
+        </div>
+    </div>
+    <script src="js/myScrForm.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (!("autofocus" in document.createElement("input"))) {
+                $("#q").focus();
+            }
+        });
+    </script>
+    <script src="js/raphael.js" type="text/javascript"></script>
+    <script src="js/paths.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
+</body>
+</html>
