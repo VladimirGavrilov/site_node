@@ -8,9 +8,11 @@ $(function () {
 			'stroke-linejoin': 'round'
 		},
 		arr = new Array();
+	arrCountPlayer = ['portugal', 'spain', 'belgium', 'italy', 'belarus', 'poland', 'finland', 'germany', 'sweden', 'turkey', 'gb', 'switzerland', 'austria', 'czech', 'slovakia', 'nungary', 'france', 'denmark', 'russia'];
 
 	for (var country in paths) {
-
+		for (let country of arrCountPlayer) {
+			
 		var obj = r.path(paths[country].path);
 
 		obj.attr(attributes);
@@ -60,6 +62,7 @@ $(function () {
 
 
 	}
+}
 
 
 });
