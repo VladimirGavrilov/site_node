@@ -7,13 +7,25 @@ $(function(){
             'stroke-width': 1,
             'stroke-linejoin': 'round'
         },
+		attributes1 = {
+			fill: '#red',
+			stroke: '#3899E6',
+			'stroke-width': 1,
+			'stroke-linejoin': 'round'
+		},
 		arr = new Array();
 	
 	for (let country in paths) {
 		
 		let obj = r.path(paths[country].path);
 		
-		obj.attr(attributes);
+		if (paths[country].gruppa == 0)
+		{ 
+			obj.attr(attributes1);		
+		} else { 
+			obj.attr(attributes);		
+		}
+		
 		
 		arr[obj.id] = country;
 		
